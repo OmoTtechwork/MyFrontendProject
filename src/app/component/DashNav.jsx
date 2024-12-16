@@ -8,17 +8,20 @@ export default function DashNav() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
-    setDropdownOpen((prev) => !prev);
+    setDropdownOpen(true); 
+  };
+
+  const closeDropdown = () => {
+    setDropdownOpen(false);
   };
 
   return (
     <nav className="flex flex-col bg-gray-400">
-      <ul className="flex justify-between items-center p-5">
-        <div className="relative">
+      <ul className="flex justify-between items-center p-2">
+        <div className="relative" onMouseLeave={closeDropdown}>
           <button
             className="h-[40px] px-4 text-gray-800 hover:bg-gray-200 rounded-md focus:outline-none"
-            onClick={toggleDropdown}
-          >
+            onClick={toggleDropdown}>
             <div className="flex items-center gap-2">
               <span>Menu</span>
               <CgMenuLeftAlt size={20} />
@@ -47,7 +50,7 @@ export default function DashNav() {
 
         <li className="font-bold text-lg text-gray-800">A-Group, LLC (RealEstate)</li>
 
-        <li className="text-gray-800 hover:underline cursor-pointer px-4 hover:bg-gray-200 rounded-md h-[40px] flex justify-center items-center content-center">Login</li>
+        <li className=" text-gray-800 hover:underline cursor-pointer px-4 hover:bg-gray-200 rounded-md h-[40px] flex justify-center items-center content-center">Login</li>
       </ul>
     </nav>
   );

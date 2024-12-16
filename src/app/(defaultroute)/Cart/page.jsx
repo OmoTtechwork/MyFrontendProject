@@ -40,18 +40,18 @@ const productCart = products.map(product => (
   </section>
 ))
   return (
-    <div className=''>
-
-      <div className="flex justify-center p-10 bg-[url('https://images.pexels.com/photos/5524166/pexels-photo-5524166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center pb-[20px]">
+      <div>
+        <div className="flex justify-center p-10 bg-[url('https://images.pexels.com/photos/5524166/pexels-photo-5524166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center pb-[20px]">
         <ImageSection/>
-      </div>
-      <div className='flex align-center justify-center content-center '>
-        <div className='grid grid-cols-2 gap-[15px] mx-0 w-[80%] p-[40px]'>
-          {productCart}
         </div>
+        <div className='flex align-center justify-center content-center '>
+          <div className='grid grid-cols-2 gap-[15px] mx-0 w-[80%] p-[40px]'>
+            {productCart}
+          </div>
 
       </div>
+
       
-    </div>
+      </div>
   )
 }
