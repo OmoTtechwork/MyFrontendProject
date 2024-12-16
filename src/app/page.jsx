@@ -15,7 +15,7 @@ export default function Home() {
             <HomeSearch/>
         </div>
       <section className="h-[370vh]">
-       <section className="w-[100%] h-[92vh] bg-slate-300 items-center justify-center content-center h-2/4 flex flex-col">
+       <section className="w-[100%] h-[92vh] bg-slate-300 items-center justify-center content-center flex flex-col">
         <Link href="/Cart"><MdRealEstateAgent size={90} /></Link>
         <h2 className="py-4 text-2xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi?</h2>
         </section>  
