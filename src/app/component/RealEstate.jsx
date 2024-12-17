@@ -13,7 +13,7 @@ export default function RealEstateConcept() {
                 <p className="py-2">Discover exceptional properties and investment opportunities with our trusted real estate solutions.</p>
             </div>
             <div className="w-4/4 flex flex-row px-14">
-                <Image className="rounded-tl-[20px] rounded-bl-[20px]" src="/construction.webp" width={'260'} height={'250'} alt="Construction Site" />
+                <Image className="rounded-tl-[20px] rounded-bl-[20px]" src="construction.webp" width={'260'} height={'250'} alt="Construction Site" />
 
             <div className="flex flex-col px-8 bg-slate-400 rounded-tr-[20px] rounded-br-[20px]">
                 <h2 className="py-10 text-3xl font-bold">Concept in Real estate</h2>
