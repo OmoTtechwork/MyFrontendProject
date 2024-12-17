@@ -10,7 +10,7 @@ export default async function SlugForCart({params}) {
     <section key={checkProduct.id} className="flex flex-col items-center hover:shadow-2xl">
       <Link href={`/shop/${checkProduct.name.replaceAll(' ','_')}`} title={`${checkProduct.name} is a type of ${checkProduct.name}`}>
 
-            <Image src={`https://robohash.org/${checkProduct.id}`} alt={checkProduct.name} width={200} height={200}/>
+            <Image src={checkProduct.imageUrl} alt={checkProduct.name} width={200} height={200}/>
             <div className='text-center'>
             <h2>{checkProduct.name}</h2>
             <p>{checkProduct.category}</p>
@@ -40,7 +40,7 @@ export default async function SlugForCart({params}) {
 
           <div className='flex flex-row gap-10 w-[100%] justify-center'>
           <div>
-          <Image src={`https://robohash.org/${productDetails.id}`} className='border border-solid' alt={productDetails.name} width={600} height={300}/>
+          <Image src={productDetails.imageUrl} className='border border-solid' alt={productDetails.name} width={600} height={300}/>
           <h1 className='text-center font-bold text-2xl'>{productDetails.name}</h1>
           <p className='text-center font-bold text-xl'>&#8358; <strong>{productDetails.price.toLocaleString()}</strong></p>
           </div>
@@ -75,7 +75,7 @@ export default async function SlugForCart({params}) {
     
         </div>
           <section className='w-[100%]'>
-          <h2 className='py-4 bg-[#9ba3af] capitalize text-center font-bold text-white text-3xl border-y-8 mx-4 my-7'>Similar Buildings with {productDetails.bedrooms} bedrooms</h2>
+          <h2 className='py-4 bg-[#9ba3af] capitalize text-center font-bold text-white text-3xl border-y-8 mx-4 my-7'>Similar Buildings with {productDetails.bedrooms} bedroom</h2>
           <div className='flex justify-center p-10'>
           <div className='grid grid-cols-3 w-[100%]  gap-10'>
             {relatedProduct}

@@ -49,6 +49,9 @@ export default function DashNav() {
         </div>
 
         <li className="font-bold text-lg text-gray-800">A-Group, LLC (RealEstate)</li>
+        <li className="px-4 py-2 hover:bg-gray-100">
+                <Link href="/Support">Support</Link>
+              </li>
 
         <li className=" text-gray-800 hover:underline cursor-pointer px-4 hover:bg-gray-200 rounded-md h-[40px] flex justify-center items-center content-center">Login</li>
       </ul>

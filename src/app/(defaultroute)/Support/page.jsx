@@ -23,7 +23,7 @@ export default function Support() {
                 <textarea name="" id="message" className="border border-[#ccc] h-52 rounded"></textarea>
             </div>
 
-            <button type="submit" className="border w-fit py-2 px-4 text-center bg-[#333] text-white rounded cursor-pointer rounded-[10px]"> Submit </button>
+            <button type="submit" className="border w-fit py-2 px-4 text-center bg-[#333] text-white cursor-pointer rounded-[10px]"> Submit </button>
         </form>
     </section>
     </div>

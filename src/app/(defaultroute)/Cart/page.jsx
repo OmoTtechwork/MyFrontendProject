@@ -12,7 +12,7 @@ const productCart = products.map(product => (
     <Link href={`/Cart/${product.name.replaceAll(' ','_')}`} title={`${product.name} is a type of ${product.category}`}>
     <div className='flex justify-center border-b-2 border-solid w-[inherit]'>
 
-      <Image src={`https://robohash.org/${product.id}`} alt={product.name} width={200} height={200}/>
+      <Image src={product.imageUrl} alt={product.name} width={200} height={200}/>
 
     </div>
       <div className='text-center'>

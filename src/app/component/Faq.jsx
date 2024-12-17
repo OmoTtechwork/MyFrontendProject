@@ -3,44 +3,59 @@ import React from "react";
 export default function AboutRealEstate() {
   return (
     <div>
-      <section className="h-[500px] pt-10 flex justify-center items-center content-center">
-        <div className="w-3/5 bg-slate-300 rounded-[10px] ">
+      <section className="h-[500px] w-[] pt-10 flex justify-center items-center content-center">
+        <div className="w-[70%] bg-slate-300 rounded-[10px]">
           <header className="flex flex-row gap-3">
-            <h1 className="pt-4"> FAQ</h1>
+            <h1 className="pt-4 px-2 text-2xl font-bold">
+              Frequently Asked Questions (FAQ)
+            </h1>
           </header>
-          <ol className="p-5">
+          <ol className="p-5 leading-relaxed">
             <li>
-              * Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Assumenda nostrum aspernatur qui quos facilis, nemo dolores
-              corrupti fugiat ad recusandae earum culpa accusantium maxime
-              possimus totam est dignissimos dolorum id!
+              <strong>What is the process for buying a home?</strong>
+              <br />
+              The process begins with identifying your budget, choosing a
+              suitable location, and finding a property that fits your needs.
+              Work with a trusted agent to guide you through negotiations,
+              inspections, and closing procedures.
             </li>
             <p>
               <br />
             </p>
+
             <li>
-              * Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Pariatur error, magni ea explicabo porro maxime cumque? Ratione
-              unde assumenda cupiditate sint qui soluta suscipit, accusamus
-              odio, a sunt praesentium voluptatum.
+              <strong>How can I list my property on this platform?</strong>
+              <br />
+              You can list your property by signing up for a seller account.
+              Fill out the listing form, provide property details and photos,
+              and our team will assist in making your listing live on the
+              platform.
             </li>
             <p>
               <br />
             </p>
+
             <li>
-              * Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-              eveniet commodi iste qui enim ut voluptatem. Ex quo fuga nam
-              commodi autem perspiciatis beatae, culpa, dolorum minima qui
-              adipisci officia!
+              <strong>
+                What are the key factors to consider when investing in real
+                estate?
+              </strong>
+              <br />
+              When investing, consider the property location, market demand,
+              appreciation potential, rental yield, and long-term costs such as
+              maintenance and taxes. Conduct research or seek professional
+              advice to make informed decisions.
             </li>
             <p>
               <br />
             </p>
+
             <li>
-              * Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem cumque quia quam nostrum, nulla architecto velit
-              deserunt pariatur amet optio beatae, repudiandae sed omnis quod
-              fuga perferendis nobis cupiditate maxime!
+              <strong>How do I contact customer support for assistance?</strong>
+              <br />
+              Our customer support team is available 24/7 to help. You can reach
+              us via email, live chat on our platform, or by calling our hotline
+              number provided on the contact page.
             </li>
           </ol>
         </div>

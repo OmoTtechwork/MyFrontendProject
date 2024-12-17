@@ -17,7 +17,7 @@ export default function HomeSearch() {
       >
         <div className="flex justify-center border-b-2 border-solid w-[inherit] ">
           <Image
-            src={`https://robohash.org/${product.id}`}
+            src={product.imageUrl}
             alt={product.name}
             width={300}
             height={200}
