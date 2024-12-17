@@ -17,9 +17,9 @@ export default function RealEstateConcept() {
 
             <div className="flex flex-col px-8 bg-slate-400 rounded-tr-[20px] rounded-br-[20px]">
                 <h2 className="py-10 text-3xl font-bold">Concept in Real estate</h2>
-            <p className="w-[100%]">Discover the finest properties and investment opportunities in real estate. Our team of professionals is dedicated to providing tailored solutions to buyers, sellers, and investors alike. Whether you're looking for your dream home, an affordable apartment, or a commercial property to expand your business, we have you covered. With years of industry experience, we specialize in connecting clients to properties that meet their needs and expectations. Our mission is to make the process of buying, selling, or investing smooth and successful. Explore our curated portfolio of premium homes, innovative property ideas, and expert market insights. Let us help you secure the future you deserve.</p>
+                <p className="w-[100%]">Discover the finest properties and investment opportunities in real estate. Our team of professionals is dedicated to providing tailored solutions to buyers, sellers, and investors alike. Whether you&apos;re looking for your dream home, an affordable apartment, or a commercial property to expand your business, we have you covered. With years of industry experience, we specialize in connecting clients to properties that meet their needs and expectations. Our mission is to make the process of buying, selling, or investing smooth and successful. Explore our curated portfolio of premium homes, innovative property ideas, and expert market insights. Let us help you secure the future you deserve.</p>
             <div className="flex py-14">
-                <Link href='/Cart'><button className="font-bold text-2xl">Start Your Search</button></Link>
+                <Link href="/Cart"><button className="font-bold text-2xl">Start Your Search</button></Link>
             </div>
             </div>
         </div >
