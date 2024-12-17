@@ -6,7 +6,7 @@ import { BsFillBuildingsFill } from "react-icons/bs";
 export default function RealEstateConcept() {
   return (
     <div>
-        <section className="gap-[290px]  ">
+        <section className="gap-[290px]">
             <div className="items-center justify-center content-center h-1/4 flex flex-col pt-[50px] bg-[#F5F5F5]">
                 <Link href="./Cart"><BsFillBuildingsFill size={60} /></Link>
                 <h2 className="font-bold pt-4 text-2xl">A-Group in Real-Estate</h2>
