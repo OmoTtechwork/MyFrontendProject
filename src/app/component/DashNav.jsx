@@ -2,10 +2,14 @@
 
 import Link from 'next/link';
 import { CgMenuLeftAlt } from 'react-icons/cg';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function DashNav() {
+  
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  useEffect(() => {
+    setDropdownOpen(true)
+  }, [])
 
   const toggleDropdown = () => {
     setDropdownOpen(true); 
