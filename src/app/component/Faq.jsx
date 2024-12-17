@@ -6,11 +6,11 @@ export default function AboutRealEstate() {
       <section className="h-[500px] w-[] pt-10 flex justify-center items-center content-center">
         <div className="w-[70%] bg-slate-300 rounded-[10px]">
           <header className="flex flex-row gap-3">
-            <h1 className="pt-4 px-2 text-2xl font-bold">
+            <h1 className="pt-4 px-3 text-2xl font-bold">
               Frequently Asked Questions (FAQ)
             </h1>
           </header>
-          <ol className="p-5 leading-relaxed">
+          <ol className="p-7 leading-relaxed">
             <li>
               <strong>What is the process for buying a home?</strong>
               <br />

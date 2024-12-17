@@ -7,12 +7,12 @@ import ImageSection from '@/app/component/ImageSection';
 
 export default function Cart() {
 const productCart = products.map(product => (
-  <section key={product.id} className="flex flex-col items-center hover:shadow-2xl align-center justify-center content-center border border-solid px-3 w-[80%] rounded-[20px]">
+  <section key={product.id} className="flex flex-col items-center hover:shadow-2xl align-center justify-center content-center border border-solid w-[80%] rounded-b-[20px]">
 
     <Link href={`/Cart/${product.name.replaceAll(' ','_')}`} title={`${product.name} is a type of ${product.category}`}>
-    <div className='flex justify-center border-b-2 border-solid w-[inherit]'>
-
-      <Image src={product.imageUrl} alt={product.name} width={200} height={200}/>
+    <div className='flex justify-center  border-solid w-[inherit]'>
+      
+      <Image loading="lazy" className="w-full h-[300px]" src={product.imageUrl} alt={product.name} width={200} height={200}/>
 
     </div>
       <div className='text-center'>

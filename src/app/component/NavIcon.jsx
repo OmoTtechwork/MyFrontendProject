@@ -6,7 +6,7 @@ import { BiSupport } from "react-icons/bi";
 
 export default function IconNav() {
   return (
-    <div>
+    <div className='font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;'>
       <section className="flex flex-row p-[70px]">
         <div className="text-center p-10 flex flex-col">
           <h2 className="text-3xl font-bold">Profile</h2>

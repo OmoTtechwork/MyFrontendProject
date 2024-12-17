@@ -9,14 +9,15 @@ export default function HomeSearch() {
   const productCart = products.slice(0, 4).map((product) => (
     <section
       key={product.id}
-      className="flex flex-col items-center hover:shadow-2xl align-center justify-center content-center border border-solid   rounded-[20px]"
+      className="flex flex-col items-center hover:shadow-2xl align-center justify-center content-center border border-solid   rounded-b-[20px]"
     >
       <Link
         href={`/Cart/${product.name.replaceAll(" ", "_")}`}
         title={`${product.name} is a type of ${product.category}`}
       >
-        <div className="flex justify-center border-b-2 border-solid w-[inherit] ">
-          <Image
+        <div className="flex justify-center border-b-2 border-solid rounded-[10px] w-full h-[300px]">
+          <Image 
+            loading="lazy"
             src={product.imageUrl}
             alt={product.name}
             width={300}
@@ -41,7 +42,8 @@ export default function HomeSearch() {
     </section>
   ));
   return (
-    <div>
+    <div className='font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+'>
       <div className="flex justify-center bg-[url('https://images.pexels.com/photos/5524166/pexels-photo-5524166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center pb-[20px]">
         <ImageSection />
       </div>

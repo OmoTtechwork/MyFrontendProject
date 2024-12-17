@@ -5,7 +5,8 @@ import { BsFillBuildingsFill } from "react-icons/bs";
 
 export default function RealEstateConcept() {
   return (
-    <div>
+    <div className='font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+'>
         <section className="gap-[290px]">
             <div className="items-center justify-center content-center h-1/4 flex flex-col pt-[50px] bg-[#F5F5F5]">
                 <Link href="./Cart"><BsFillBuildingsFill size={60} /></Link>
@@ -13,7 +14,7 @@ export default function RealEstateConcept() {
                 <p className="py-2">Discover exceptional properties and investment opportunities with our trusted real estate solutions.</p>
             </div>
             <div className="w-4/4 flex flex-row px-14">
-                <Image className="rounded-tl-[20px] rounded-bl-[20px]" src="construction.webp" width={'260'} height={'250'} alt="Construction Site" />
+                <Image className="rounded-tl-[20px] rounded-bl-[20px]" src="/construction.webp" loading="lazy" width={260} height={250} alt="Construction Site" />
 
             <div className="flex flex-col px-8 bg-slate-400 rounded-tr-[20px] rounded-br-[20px]">
                 <h2 className="py-10 text-3xl font-bold">Concept in Real estate</h2>

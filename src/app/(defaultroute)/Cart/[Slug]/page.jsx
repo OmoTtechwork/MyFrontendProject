@@ -10,7 +10,7 @@ export default async function SlugForCart({params}) {
     <section key={checkProduct.id} className="flex flex-col items-center hover:shadow-2xl">
       <Link href={`/shop/${checkProduct.name.replaceAll(' ','_')}`} title={`${checkProduct.name} is a type of ${checkProduct.name}`}>
 
-            <Image src={checkProduct.imageUrl} alt={checkProduct.name} width={200} height={200}/>
+            <Image loading="lazy" className="w-full h-[300px]" src={checkProduct.imageUrl} alt={checkProduct.name} width={200} height={200}/>
             <div className='text-center'>
             <h2>{checkProduct.name}</h2>
             <p>{checkProduct.category}</p>
@@ -21,17 +21,18 @@ export default async function SlugForCart({params}) {
        ))
 
        return (
-        <div>
+        <div className='font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+'>
           <div className='flex justify-center bg-gray-200'>
           <div className='grid grid-cols-4 grid-rows-2  border-4'>
-            <Image src={`https://robohash.org/${productDetails.id}`} className='border border-solid' alt={productDetails.name} width={320} height={200}/>
-            <Image src={`https://robohash.org/${productDetails.id}`} className='border border-solid' alt={productDetails.name} width={320} height={200}/>
-            <Image src={`https://robohash.org/${productDetails.id}`} className='border border-solid' alt={productDetails.name} width={320} height={200}/>
-            <Image src={`https://robohash.org/${productDetails.id}`} className='border border-solid' alt={productDetails.name} width={320} height={200}/>
-            <Image src={`https://robohash.org/${productDetails.id}`} className='border border-solid' alt={productDetails.name} width={320} height={200}/>
-            <Image src={`https://robohash.org/${productDetails.id}`} className='border border-solid' alt={productDetails.name} width={320} height={200}/>
-            <Image src={`https://robohash.org/${productDetails.id}`} className='border border-solid' alt={productDetails.name} width={320} height={200}/>
-            <Image src={`https://robohash.org/${productDetails.id}`} className='border border-solid' alt={productDetails.name} width={320} height={200}/>
+            <Image loading="lazy" src={`https://robohash.org/${productDetails.id}`} className='border border-solid w-full h-[300px]' alt={productDetails.name} width={320} height={200}/>
+            <Image loading="lazy" src={`https://robohash.org/${productDetails.id}`} className='border border-solid w-full h-[300px]' alt={productDetails.name} width={320} height={200}/>
+            <Image loading="lazy" src={`https://robohash.org/${productDetails.id}`} className='border border-solid w-full h-[300px]' alt={productDetails.name} width={320} height={200}/>
+            <Image loading="lazy" src={`https://robohash.org/${productDetails.id}`} className='border border-solid w-full h-[300px]' alt={productDetails.name} width={320} height={200}/>
+            <Image loading="lazy" src={`https://robohash.org/${productDetails.id}`} className='border border-solid w-full h-[300px]' alt={productDetails.name} width={320} height={200}/>
+            <Image loading="lazy" src={`https://robohash.org/${productDetails.id}`} className='border border-solid w-full h-[300px]' alt={productDetails.name} width={320} height={200}/>
+            <Image loading="lazy" src={`https://robohash.org/${productDetails.id}`} className='border border-solid w-full h-[300px]' alt={productDetails.name} width={320} height={200}/>
+            <Image loading="lazy" src={`https://robohash.org/${productDetails.id}`} className='border border-solid w-full h-[300px]' alt={productDetails.name} width={320} height={200}/>
           </div>
           </div>
 
@@ -40,7 +41,7 @@ export default async function SlugForCart({params}) {
 
           <div className='flex flex-row gap-10 w-[100%] justify-center'>
           <div>
-          <Image src={productDetails.imageUrl} className='border border-solid' alt={productDetails.name} width={600} height={300}/>
+          <Image loading="lazy" src={productDetails.imageUrl} className='border border-solid' alt={productDetails.name} width={600} height={300}/>
           <h1 className='text-center font-bold text-2xl'>{productDetails.name}</h1>
           <p className='text-center font-bold text-xl'>&#8358; <strong>{productDetails.price.toLocaleString()}</strong></p>
           </div>
