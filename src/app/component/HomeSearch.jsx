@@ -22,6 +22,7 @@ export default function HomeSearch() {
             alt={product.name}
             width={300}
             height={200}
+            className="w-full"
           />
         </div>
         <div className="text-center">
@@ -42,13 +43,12 @@ export default function HomeSearch() {
     </section>
   ));
   return (
-    <div className='font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-'>
+    <div className="" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}>
       <div className="flex justify-center bg-[url('https://images.pexels.com/photos/5524166/pexels-photo-5524166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center pb-[20px]">
         <ImageSection />
       </div>
       <div className="flex align-center justify-center content-center ">
-        <div className="grid grid-cols-4 gap-[15px] mx-0 w-[90%] p-[40px]">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-[15px] mx-0 w-[90%] p-[40px]">
           {productCart}
         </div>
       </div>

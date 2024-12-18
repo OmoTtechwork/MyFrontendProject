@@ -8,7 +8,7 @@ export default async function SlugForCart({params}) {
   const  productDetails = products.find(product => product.name.split(' ').join('_') == slugProduct.Slug)
   const relatedProduct = products.filter(product => (product.bedrooms == productDetails.bedrooms) && (productDetails.name !== product.name)).map(checkProduct => (
     <section key={checkProduct.id} className="flex flex-col items-center hover:shadow-2xl">
-      <Link href={`/shop/${checkProduct.name.replaceAll(' ','_')}`} title={`${checkProduct.name} is a type of ${checkProduct.name}`}>
+      <Link href={`/Cart/${checkProduct.name.replaceAll(' ','_')}`} title={`${checkProduct.name} is a type of ${checkProduct.name}`}>
 
             <Image loading="lazy" className="w-full h-[300px]" src={checkProduct.imageUrl} alt={checkProduct.name} width={200} height={200}/>
             <div className='text-center'>
@@ -21,7 +21,7 @@ export default async function SlugForCart({params}) {
        ))
 
        return (
-        <div className='font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        <div className='font-sans text-base
 '>
           <div className='flex justify-center bg-gray-200'>
           <div className='grid grid-cols-4 grid-rows-2  border-4'>

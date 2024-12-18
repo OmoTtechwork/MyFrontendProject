@@ -2,8 +2,8 @@ import React from "react";
 
 export default function AboutRealEstate() {
   return (
-    <div>
-      <section className="h-[500px] w-[] pt-10 flex justify-center items-center content-center">
+    <div className="sm:w-full" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}>
+      <section className="lg:h-[500px]  pt-10 flex justify-center items-center content-center">
         <div className="w-[70%] bg-slate-300 rounded-[10px]">
           <header className="flex flex-row gap-3">
             <h1 className="pt-4 px-3 text-2xl font-bold">

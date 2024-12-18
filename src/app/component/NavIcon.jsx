@@ -6,7 +6,7 @@ import { BiSupport } from "react-icons/bi";
 
 export default function IconNav() {
   return (
-    <div className='font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;'>
+    <div className="">
       <section className="flex flex-row p-[70px]">
         <div className="text-center p-10 flex flex-col">
           <h2 className="text-3xl font-bold">Profile</h2>
@@ -22,7 +22,7 @@ export default function IconNav() {
           </p>
         </div>
 
-        <div className="text-center p-10">
+        <div className="text-center p-10 ">
           <h2 className="text-3xl font-bold">Cart</h2>
           <p>
             <Link href="/Cart" className="flex justify-center p-4">

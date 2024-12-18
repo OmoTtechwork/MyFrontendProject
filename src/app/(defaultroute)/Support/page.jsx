@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Support() {
   return (
-    <div>
+    <div style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}>
       <section className="py-20 px-20">
         <h2 className="text-4xl font-bold"><span className="special">Contact</span> Us</h2>
         <p className="text-lg mt-5">Please fill out the form below</p>
