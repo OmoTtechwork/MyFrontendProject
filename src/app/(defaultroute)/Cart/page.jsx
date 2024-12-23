@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 import ImageSection from "@/app/component/ImageSection";
+import Button from "@/app/component/Button";
 
 export default function Cart() {
   
@@ -44,6 +45,7 @@ export default function Cart() {
           <p className="pb-3"><strong>{product.availability}</strong></p>
         </div>
       </Link>
+      <Button/>
     </section>
   ));
   return (

@@ -3,6 +3,7 @@ import { products } from "@/app/component/data";
 import Image from "next/image";
 import Link from "next/link";
 import { Urls } from "@/app/component/secondData";
+import Button from "@/app/component/Button";
 
 export default async function SlugForCart({ params }) {
   const slugProduct = await params;
@@ -26,7 +27,7 @@ export default async function SlugForCart({ params }) {
         >
           <Image
             loading="lazy"
-            className="w-full h-[300px]"
+            className="w-[420px] h-[260px]"
             src={checkProduct.imageUrl}
             alt={checkProduct.name}
             width={200}
@@ -43,11 +44,11 @@ export default async function SlugForCart({ params }) {
     (product) => product.id == productDetails.id
   ).map((urlProduct) => (
     <div key={urlProduct.id} className="flex justify-center bg-gray-200">
-      <div className="grid grid-cols-4 grid-rows-2  border-4">
+      <div className="grid  md:grid-cols-4 lg:grid-cols-4 md:grid-rows-2 lg:grid-rows-2  border-4">
         <Image
           loading="lazy"
           src={urlProduct.url1}
-          className="border border-solid w-full lg:h-[250px]"
+          className="border border-solid w-full sm:h-[100px] md:h-[200px] lg:h-[250px]"
           alt={productDetails.name}
           width={400}
           height={200}
@@ -55,7 +56,7 @@ export default async function SlugForCart({ params }) {
         <Image
           loading="lazy"
           src={urlProduct.url2}
-          className="border border-solid w-full lg:h-[250px]"
+          className="border border-solid w-full sm:h-[100px] md:h-[200px] lg:h-[250px]"
           alt={productDetails.name}
           width={400}
           height={200}
@@ -63,7 +64,7 @@ export default async function SlugForCart({ params }) {
         <Image
           loading="lazy"
           src={urlProduct.url3}
-          className="border border-solid w-full lg:h-[250px]"
+          className="border border-solid md:h-[200px] sm:h-[100px] w-full lg:h-[250px]"
           alt={productDetails.name}
           width={400}
           height={200}
@@ -71,7 +72,7 @@ export default async function SlugForCart({ params }) {
         <Image
           loading="lazy"
           src={urlProduct.url4}
-          className="border border-solid w-full lg:h-[250px]"
+          className="border border-solid w-full sm:h-[100px] md:h-[200px] lg:h-[250px]"
           alt={productDetails.name}
           width={400}
           height={200}
@@ -79,7 +80,7 @@ export default async function SlugForCart({ params }) {
         <Image
           loading="lazy"
           src={urlProduct.url5}
-          className="border border-solid w-full lg:h-[250px]"
+          className="border border-solid w-full sm:h-[100px] md:h-[200px] lg:h-[250px]"
           alt={productDetails.name}
           width={400}
           height={200}
@@ -87,7 +88,7 @@ export default async function SlugForCart({ params }) {
         <Image
           loading="lazy"
           src={urlProduct.url6}
-          className="border border-solid w-full lg:h-[250px]"
+          className="border border-solid w-full sm:h-[100px] md:h-[200px] lg:h-[250px]"
           alt={productDetails.name}
           width={400}
           height={200}
@@ -95,7 +96,7 @@ export default async function SlugForCart({ params }) {
         <Image
           loading="lazy"
           src={urlProduct.url7}
-          className="border border-solid w-full lg:h-[250px]"
+          className="border border-solid w-full sm:h-[100px] md:h-[200px] lg:h-[250px]"
           alt={productDetails.name}
           width={400}
           height={200}
@@ -103,7 +104,7 @@ export default async function SlugForCart({ params }) {
         <Image
           loading="lazy"
           src={urlProduct.url8}
-          className="border border-solid w-full lg:h-[250px]"
+          className="border border-solid w-full sm:h-[100px] md:h-[200px] lg:h-[250px]"
           alt={productDetails.name}
           width={400}
           height={200}
@@ -132,6 +133,10 @@ export default async function SlugForCart({ params }) {
             <p className="text-center font-bold sm:text-base md:text-lg lg:text-lg">
               &#8358; <strong>{productDetails.price.toLocaleString()}</strong>
             </p>
+            <div className="flex justify-center lg:p-5">
+            <Button/>
+
+            </div>
           </div>
           <div className="justify-center align-center content-center">
             <div className="lg:w-[500px] lg:h-[600px]">
@@ -183,7 +188,7 @@ export default async function SlugForCart({ params }) {
           Similar Buildings with {productDetails.bedrooms} bedroom
         </h2>
         <div className="flex justify-center p-10">
-          <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 w-[100%] sm:gap-3 md:gap-6 lg:gap-10">
+          <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 w-[100%] sm:gap-3 md:gap-6 lg:gap-10 rounded-b-">
             {relatedProduct}
           </div>
         </div>

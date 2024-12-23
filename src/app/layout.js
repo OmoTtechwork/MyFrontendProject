@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "./component/Footer";
 import DashNav from "./component/DashNav";
+import { SideBarProvider } from "./providers";
 
 
 const geistSans = localFont({
@@ -24,16 +25,20 @@ export default function RootLayout({children,}) {
   return (
     <html lang="en">
       <body
+      
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <SideBarProvider>
         <div>
         <DashNav/>
 
         {children}
 
 
-        <Footer/>
+        
         </div>
+        <Footer/>
+        </SideBarProvider>
       </body>
     </html>
   );
