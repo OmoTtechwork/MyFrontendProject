@@ -49,7 +49,7 @@ export default async function SlugForCart({ params }) {
           src={urlProduct.url1}
           className="border border-solid w-full lg:h-[250px]"
           alt={productDetails.name}
-          width={320}
+          width={400}
           height={200}
         />
         <Image
@@ -57,7 +57,7 @@ export default async function SlugForCart({ params }) {
           src={urlProduct.url2}
           className="border border-solid w-full lg:h-[250px]"
           alt={productDetails.name}
-          width={320}
+          width={400}
           height={200}
         />
         <Image
@@ -65,7 +65,7 @@ export default async function SlugForCart({ params }) {
           src={urlProduct.url3}
           className="border border-solid w-full lg:h-[250px]"
           alt={productDetails.name}
-          width={320}
+          width={400}
           height={200}
         />
         <Image
@@ -73,7 +73,7 @@ export default async function SlugForCart({ params }) {
           src={urlProduct.url4}
           className="border border-solid w-full lg:h-[250px]"
           alt={productDetails.name}
-          width={320}
+          width={400}
           height={200}
         />
         <Image
@@ -81,7 +81,7 @@ export default async function SlugForCart({ params }) {
           src={urlProduct.url5}
           className="border border-solid w-full lg:h-[250px]"
           alt={productDetails.name}
-          width={320}
+          width={400}
           height={200}
         />
         <Image
@@ -89,7 +89,7 @@ export default async function SlugForCart({ params }) {
           src={urlProduct.url6}
           className="border border-solid w-full lg:h-[250px]"
           alt={productDetails.name}
-          width={320}
+          width={400}
           height={200}
         />
         <Image
@@ -97,7 +97,7 @@ export default async function SlugForCart({ params }) {
           src={urlProduct.url7}
           className="border border-solid w-full lg:h-[250px]"
           alt={productDetails.name}
-          width={320}
+          width={400}
           height={200}
         />
         <Image
@@ -105,7 +105,7 @@ export default async function SlugForCart({ params }) {
           src={urlProduct.url8}
           className="border border-solid w-full lg:h-[250px]"
           alt={productDetails.name}
-          width={320}
+          width={400}
           height={200}
         />
       </div>

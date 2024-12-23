@@ -15,7 +15,7 @@ export default function HomeSearch() {
         href={`/Cart/${product.name.replaceAll(" ", "_")}`}
         title={`${product.name} is a type of ${product.category}`}
       >
-        <div className="relative border border-solid rounded-[10px] w-full h-[200px]">
+        <div className="relative border border-solid rounded-[10px] w-[310px] h-[202px]">
           <Image
             loading="lazy"
             src={product.imageUrl}

@@ -19,7 +19,7 @@ export default function Cart() {
         <div className="flex justify-center  border-solid object-cover">
           <Image
             loading="lazy"
-            className="w-full h-[300px]"
+            className="w-[420px] h-[260px]"
             src={product.imageUrl}
             alt={product.name}
             width={200}
