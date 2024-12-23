@@ -120,7 +120,6 @@ export default function DashNav() {
           </li>
         </div>
 
-        {/* {message && <div className="absolute bottom-0 left-0 text-sm text-red-600">{message}</div>} */}
       </ul>
     </nav>
   );
