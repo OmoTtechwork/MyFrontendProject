@@ -26,7 +26,7 @@ export default async function SlugForCart({ params }) {
         >
           <Image
             loading="lazy"
-            className="w-full h-[300px]"
+            className="w-[420px] h-[260px]"
             src={checkProduct.imageUrl}
             alt={checkProduct.name}
             width={200}
