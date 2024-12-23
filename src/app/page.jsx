@@ -15,7 +15,7 @@ export default function Home() {
           '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
       }}
     >
-      <div>
+      <div >
         <HomeSearch />
       </div>
       <section className="lg:h-[370vh]">

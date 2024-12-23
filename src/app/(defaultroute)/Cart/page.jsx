@@ -16,7 +16,7 @@ export default function Cart() {
         href={`/Cart/${product.name.replaceAll(" ", "_")}`}
         title={`${product.name} is a type of ${product.category}`}
       >
-        <div className="flex justify-center  border-solid w-[inherit]">
+        <div className="flex justify-center  border-solid object-cover">
           <Image
             loading="lazy"
             className="w-full h-[300px]"

@@ -6,13 +6,13 @@ import { MdEmail } from "react-icons/md";
 export default function FooterDetails() {
   return (
     <div
-      className="grid lg:grid-cols-[3fr_1fr_1fr_2fr] gap-x-5 lg:text-[26px] md:text-base sm:text-xs px-8 py-10 border bg-black border-black"
+      className="grid lg:grid-cols-[3fr_1fr_1fr_2fr] gap-x-5 lg:text-xl md:text-base sm:text-xs px-8 py-10 border bg-black border-black"
       style={{
         fontFamily:
           '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
       }}
     >
-      <div className="text-white text-[24px] leading-9 px-4 lg:text-2xl md:text-base sm:text-xs">
+      <div className="text-white gap-x-5 lg:text-xl md:text-base sm:text-xs md:leading-6 lg:leading-9 md:px-2 lg:px-4 ">
         <h2 className="lg:text-2xl md:text-base sm:text-xs  capitalize py-4">
           A-Group, LLC
         </h2>
@@ -71,14 +71,14 @@ export default function FooterDetails() {
         </ul>
       </div>
       <div className="text-white">
-        <h2 className="lg:text-2xl md:text-base sm:text-xs text-white capitalize py-4">
+        <h2 className="lg:text-xl md:text-base sm:text-xs text-white capitalize py-4">
           contact details
         </h2>
         <address>
           House 24, Adebayo Street, Lekki Phase 1, Lagos State, Nigeria.
         </address>
         <aside className="text-white">
-          <h3 className="text-2xl text-white capitalize py-4">
+          <h3 className="lg:text-xl md:text-base sm:text-xs text-white capitalize py-4">
             contact addresses
           </h3>
           <p>
