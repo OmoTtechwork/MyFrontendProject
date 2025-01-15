@@ -15,6 +15,7 @@ export default function Button({ product }) {
       return;
     }
 
+    
     if (product && product.name) {
       if (!cart.some((item) => item.name === product.name)) {
         const updatedCart = [...cart, product];
