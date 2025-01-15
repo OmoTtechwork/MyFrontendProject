@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useContext, useState, useEffect } from "react";
-import { products } from "@/app/component/data"; // Assuming this is your full product list
+import { products } from "@/app/component/data";
 import Link from "next/link";
 import Image from "next/image";
 import { FaStar } from "react-icons/fa";
