@@ -25,7 +25,7 @@ export default function Cart() {
         product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         product.category.toLowerCase().includes(searchQuery.toLowerCase())
       );
-      setFilteredProducts(filtered);  // Set filtered results
+      setFilteredProducts(filtered); 
     }
   }, [searchQuery]);
 
