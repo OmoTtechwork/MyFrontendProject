@@ -1,13 +1,18 @@
-import React from "react";
+"use client";
+
+import React, { useContext } from "react";
 import { products } from "@/app/component/data";
 import Link from "next/link";
 import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 import ImageSection from "@/app/component/ImageSection";
 import Button from "@/app/component/Button";
+import { SideBarContext } from "@/app/providers";
 
 export default function Cart() {
-  
+  const { cart } = useContext(SideBarContext); 
+  console.log("Cart contents:", cart);
+
   const productCart = products.map((product) => (
     <section
       key={product.id}
@@ -38,22 +43,28 @@ export default function Cart() {
               <p>
                 <strong>{product.rating}</strong>
               </p>
-              <FaStar style={{ color: "orange" }} /><FaStar style={{ color: "orange" }} /><FaStar style={{ color: "orange" }} /><FaStar style={{ color: "orange" }} />
+              <FaStar style={{ color: "orange" }} />
+              <FaStar style={{ color: "orange" }} />
+              <FaStar style={{ color: "orange" }} />
+              <FaStar style={{ color: "orange" }} />
             </div>
           </div>
           <p>&#8358; {product.price.toLocaleString()}</p>
-          <p className="pb-3"><strong>{product.availability}</strong></p>
+          <p className="pb-3">
+            <strong>{product.availability}</strong>
+          </p>
         </div>
       </Link>
-      <Button/>
+      <Button product={product} /> 
     </section>
   ));
+
   return (
-    <div className='font-sans text-base'>
+    <div className="font-sans text-base">
       <div className="flex justify-center p-10 bg-[url('https://images.pexels.com/photos/5524166/pexels-photo-5524166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center pb-[20px]">
         <ImageSection />
       </div>
-      <div className="flex align-center justify-center content-center ">
+      <div className="flex align-center justify-center content-center">
         <div className="grid lg:grid-cols-2 lg:gap-[15px] mx-0 lg:w-[80%] lg:p-[40px]">
           {productCart}
         </div>
