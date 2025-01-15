@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 import ImageSection from "./ImageSection";
+import HomeDisplay from "./HomeDisplay";
 
 export default function HomeSearch() {
   const productCart = products.slice(0, 4).map((product) => (
@@ -50,7 +51,7 @@ export default function HomeSearch() {
       }}
     >
       <div className="flex justify-center bg-[url('https://images.pexels.com/photos/5524166/pexels-photo-5524166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center pb-[20px]">
-        <ImageSection />
+        <HomeDisplay/>
       </div>
       <div className="flex align-center justify-center content-center">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-[15px] mx-0 w-[90%] p-[10px]">
