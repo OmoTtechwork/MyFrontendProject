@@ -134,7 +134,7 @@ export default async function SlugForCart({ params }) {
               &#8358; <strong>{productDetails.price.toLocaleString()}</strong>
             </p>
             <div className="flex justify-center lg:p-5">
-            <Button/>
+            <Button product={productDetails} />
 
             </div>
           </div>

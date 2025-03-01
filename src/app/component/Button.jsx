@@ -17,7 +17,7 @@ export default function Button({ product }) {
     }
 
     if (product && product.name) {
-      if (!cart.some((item) => item.name === product.name)) {
+      if (!cart.some((item) => item.id === product.id)) { // Use product.id for checking
         const updatedCart = [...cart, product];
         setCart(updatedCart);
         setAddedToCart(true);
