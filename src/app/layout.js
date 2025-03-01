@@ -17,8 +17,8 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "My new shop app",
-  description: "A project on e-commerce application using React",
+  title: "Real-estate A-Group",
+  description: "E-commerce",
 };
 
 export default function RootLayout({children,}) {
