@@ -115,7 +115,7 @@ const About = () => {
             transform the real estate experience through innovation and client-focused service.
           </p>
           <p>
-            We're revolutionizing the way people find and purchase their dream
+            We're revolutionizing the way people find and purchase their dream  {/* Line 118:15 - Changed */}
             homes. Our app provides a seamless and transparent experience from
             search to closing.
           </p>
@@ -146,7 +146,7 @@ const About = () => {
             listings and services.
           </li>
           <li style={coreValuesItemStyle}>
-            <strong>Innovation:</strong> We're constantly seeking new ways to
+            <strong>Innovation:</strong> We're constantly seeking new ways to  {/* Line 149:44 - Changed */}
             improve the real estate experience. We leverage cutting-edge
             technology to streamline processes and provide added value to our
             clients.
@@ -167,15 +167,15 @@ const About = () => {
         <h2 style={sectionTitleStyle}>Meet the Team</h2>
         <div style={{
             ...teamContainerStyle,
-            ...(mediaQueryStyles['@media (min-width: 768px)']?.teamContainerStyle || {}),
+            ...(mediaQueryStyles["@media (min-width: 768px)"]?.teamContainerStyle || {}),
           }}>
 
           <div style={{
                ...teamDescriptionStyle,
-               ...(mediaQueryStyles['@media (min-width: 768px)']?.teamDescriptionStyle || {}),
+               ...(mediaQueryStyles["@media (min-width: 768px)"]?.teamDescriptionStyle || {}),
              }}>
             <p>
-              We're a passionate group of real estate professionals, software
+              We're a passionate group of real estate professionals, software  {/* Line 178:17 - Changed */}
               engineers, and customer service experts dedicated to making your
               property purchase journey a success. Each member of our team
               brings a unique set of skills and experiences to the table,
@@ -183,7 +183,7 @@ const About = () => {
               real estate needs.
             </p>
             <p>
-              From first-time homebuyers to seasoned investors, we're here to
+              From first-time homebuyers to seasoned investors, we're here to {/* Line 186:67 - Changed */}
               guide you every step of the way.
             </p>
           </div>
@@ -193,7 +193,7 @@ const About = () => {
       <section style={sectionStyle}>
         <h2>Contact Us</h2>
         <p>
-          Have questions or feedback? We'd love to hear from you! Our dedicated
+          Have questions or feedback? We'd love to hear from you! Our dedicated  {/* Line 196:41 - Changed */}
           team is ready to assist you with any inquiries you may have.
         </p>
         <a href="/Support" style={contactLinkStyle}>
