@@ -59,8 +59,8 @@ export default function HomeSearch() {
         </div>
       </div>
       <div className="flex justify-center align-center content-center p-[20px] text-white font-extrabold">
-        <div className="border border-solid w-[170px] text-center p-[14px] rounded-[10px] hover:scale-110 transform transition-transform duration-400 bg-sky-700">
-          <Link href="/Cart">View More</Link>
+        <div className="border border-solid w-[270px] text-center p-[14px] rounded-[10px] hover:scale-110 transform transition-transform duration-400 bg-sky-700">
+          <Link href="/Cart">More Properties</Link>
         </div>
       </div>
     </div>

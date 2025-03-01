@@ -33,7 +33,7 @@ export default function ImageSection({ handleSearchChange }) {
             name="search"
             id="search"
             className="lg:w-[500px] md:w-[400px] sm:w-[200px] h-[50px] rounded-[20px] text-center cursor-pointer"
-            placeholder="Search your cart"
+            placeholder="Search for your desired property"
           />
         </div>
       </div>

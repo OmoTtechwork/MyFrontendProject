@@ -85,7 +85,10 @@ export default function FooterDetails() {
             <Link href="tel:+234812345678">+234812345678</Link>
           </p>
           <p>
-            <Link href="mailto:alogbaomotayo1426@gmail.com">A Group, LLC</Link>
+            <Link href="mailto:alogbaomotayo1426@gmail.com">Contact-email</Link>
+          </p>
+          <p>
+            A-Group, LLC
           </p>
         </aside>
       </div>

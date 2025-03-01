@@ -21,9 +21,9 @@ export default function Button({ product }) {
         const updatedCart = [...cart, product];
         setCart(updatedCart);
         setAddedToCart(true);
-        console.log("Product added:", product);
+        console.log("Property added:", product);
       } else {
-        alert("Product already in the cart!");
+        alert("Property already in the cart!");
       }
     }
   };
@@ -39,7 +39,7 @@ export default function Button({ product }) {
             animation: addedToCart ? "shake 0.5s ease-in-out" : "none", 
           }}
         >
-          {addedToCart ? "Added to Cart" : "Add to Cart"}
+          {addedToCart ? "Added to Cart" : "Buy Property"}
         </p>
       </button>
     </div>
