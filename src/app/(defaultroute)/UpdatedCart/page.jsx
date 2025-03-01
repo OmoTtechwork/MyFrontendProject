@@ -3,6 +3,7 @@
 import React, { useContext, useState, useEffect } from "react";
 import { SideBarContext } from "@/app/providers";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function UpdatedCart() {
   const { cart, setCart } = useContext(SideBarContext);
@@ -39,14 +40,23 @@ export default function UpdatedCart() {
       <ul className="space-y-4">
         {clientCart.map((product, index) => (
           <li key={index} className="bg-white p-4 rounded-lg shadow-md flex flex-col sm:flex-row sm:space-x-4">
-            <img
-              src={product?.imageUrl || "default_image.jpg"}
-              alt={product?.name || "Product"}
-              className="w-24 h-24 object-cover rounded-lg"
-            />
+            <div className="image-container"> {/* New container for the image */}
+              <Image
+                src={product?.imageUrl || "default_image.jpg"}
+                alt={product?.name || "Product"}
+                width={100}  // Set default width
+                height={100} // Set default height
+                style={{
+                  objectFit: 'cover',
+                  borderRadius: '8px',
+                  width: '100%', // Ensure the image fills the container
+                  height: '100%',//Ensure the image fills the container
+                }}
+              />
+            </div>
             <div className="flex-1">
               <h2 className="font-semibold text-lg">{product?.name || "Unnamed Product"}</h2>
-              <p className="text-gray-700">Price: &#8358; {product?.price?.toLocaleString() || "N/A"}</p>
+              <p className="text-gray-700">Price: ₦ {product?.price?.toLocaleString() || "N/A"}</p>
               <div className="mt-3 flex space-x-3">
                 <button
                   onClick={() => removeFromCart(product)}
@@ -65,7 +75,7 @@ export default function UpdatedCart() {
         <div className="flex justify-between mt-3">
           <p className="text-lg font-medium">Total: </p>
           <p className="text-lg font-bold text-green-600">
-            &#8358; {totalPrice.toLocaleString()}
+            ₦ {totalPrice.toLocaleString()}
           </p>
         </div>
         <div className="mt-3">
@@ -76,6 +86,28 @@ export default function UpdatedCart() {
           </Link>
         </div>
       </div>
+      <style jsx>{`
+        .image-container {
+          width: 100px;   /* Default width */
+          height: 100px;  /* Default height */
+          position: relative;
+          overflow: hidden; /* Clip images that overflow the container */
+          border-radius: 8px; /* Match image border radius */
+        }
+        @media (min-width: 640px) { /* sm breakpoint (Small screens and up) */
+          .image-container {
+            width: 120px; /* Larger width on small screens and up */
+            height: 120px; /* Larger height on small screens and up */
+          }
+        }
+
+         @media (min-width: 768px) { /* md breakpoint (Medium screens and up) */
+          .image-container {
+            width: 140px; /* Larger width on medium screens and up */
+            height: 140px; /* Larger height on medium screens and up */
+          }
+        }
+      `}</style>
     </div>
   );
 }
