@@ -94,7 +94,7 @@ export default function DashNav() {
                 <Link href="/" onClick={() => setDropdownOpen(false)}>Home</Link>
               </li>
               <li className="px-4 py-2 hover:bg-gray-100">
-                <Link href="/Cart" onClick={() => setDropdownOpen(false)}>Cart</Link>
+                <Link href="/Shop" onClick={() => setDropdownOpen(false)}>Shop</Link>
               </li>
               <li className="px-4 py-2 hover:bg-gray-100">
                 <Link href="/About" onClick={() => setDropdownOpen(false)}>About</Link>
@@ -110,7 +110,7 @@ export default function DashNav() {
 
         <div className="text-gray-800 cursor-pointer px-4 rounded-md h-[40px] flex justify-center items-center content-center">
           <ul className=" px-4 py-2 hover:scale-110 transform transition-transform duration-400">
-            <Link href="/UpdatedCart">
+            <Link href="/Cart">
               <div className="flex space-x-1 items-start">
                 <FaCartPlus
                   style={{

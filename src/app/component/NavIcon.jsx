@@ -25,7 +25,7 @@ export default function IconNav() {
         <div className="text-center p-10 ">
           <h2 className="text-3xl font-bold">Cart</h2>
           <p>
-            <Link href="/Cart" className="flex justify-center p-4">
+            <Link href="/Shop" className="flex justify-center p-4">
               <HiShoppingCart size={50} />
             </Link>
           </p>

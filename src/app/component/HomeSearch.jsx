@@ -13,7 +13,7 @@ export default function HomeSearch() {
       className="flex flex-col items-center hover:shadow-2xl align-center justify-center content-center border border-solid rounded-b-[20px]"
     >
       <Link
-        href={`/Cart/${product.name.replaceAll(" ", "_")}`}
+        href={`/Shop/${product.name.replaceAll(" ", "_")}`}
         title={`${product.name} is a type of ${product.category}`}
       >
         <div className="relative border border-solid rounded-[10px] w-[310px] h-[202px]">

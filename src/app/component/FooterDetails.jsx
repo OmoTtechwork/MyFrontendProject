@@ -50,7 +50,7 @@ export default function FooterDetails() {
             <Link href="/contact">contact</Link>
           </li>
           <li>
-            <Link href="/Cart">shop</Link>
+            <Link href="/Shop">shop</Link>
           </li>
         </ul>
       </div>

@@ -14,7 +14,7 @@ export default function RealEstateConcept() {
     >
       <section className="gap-[290px]">
         <div className="items-center justify-center content-center h-1/4 flex flex-col pt-[50px] bg-[#F5F5F5]">
-          <Link href="./Cart">
+          <Link href="./Shop">
             <BsFillBuildingsFill size={60} />
           </Link>
           <h2 className="font-bold pt-4 text-2xl">A-Group in Real-Estate</h2>
@@ -49,7 +49,7 @@ export default function RealEstateConcept() {
               market insights. Let us help you secure the future you deserve.
             </p>
             <div className="flex py-14">
-              <Link href="/Cart">
+              <Link href="/Shop">
                 <button className="font-bold text-2xl">
                   Start Your Search
                 </button>

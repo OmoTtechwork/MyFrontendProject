@@ -22,7 +22,7 @@ export default async function SlugForCart({ params }) {
         className="flex flex-col items-center hover:shadow-2xl"
       >
         <Link
-          href={`/Cart/${checkProduct.name.replaceAll(" ", "_")}`}
+          href={`/Shop/${checkProduct.name.replaceAll(" ", "_")}`}
           title={`${checkProduct.name} is a type of ${checkProduct.name}`}
         >
           <Image
