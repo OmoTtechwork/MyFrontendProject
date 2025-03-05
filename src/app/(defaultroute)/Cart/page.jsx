@@ -23,8 +23,8 @@ export default function UpdatedCart() {
 
   if (clientCart.length === 0) {
     return (
-      <div className="p-6 bg-gray-100">
-        <h1 className="text-xl font-semibold">Your Cart</h1>
+      <div className="p-6 bg-gray-100 h-[92vh] flex-col flex justify-center content-center items-center">
+        <h1 className="text-xl font-semibold">Cart</h1>
         <p>Your cart is empty.</p>
       </div>
     );
